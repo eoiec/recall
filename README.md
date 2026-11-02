@@ -2,7 +2,11 @@
 
 > 用 SM-2 间隔重复算法给每道错题排复习期，把「记了不看、看了就忘」变成一条可执行的日程。
 
-**在线地址**：`https://<你的 GitHub 用户名>.github.io/recall/` （开启 Pages 后自动生效）
+**在线地址**：https://eoiec.github.io/recall/
+
+**仓库地址**：https://github.com/eoiec/recall
+
+> 零依赖单页应用，打开即用，无需登录、无需安装。断网也可离线运行（CSS/JS 全内联）。
 
 ---
 
@@ -58,10 +62,10 @@ mastery = 100 × (1 − e^(−(interval/30 + reps/4)))
 
 ```bash
 # 方式一：直接双击
-open site/index.html
+open docs/index.html
 
 # 方式二：起个本地服务
-python -m http.server 8000 --directory site
+python -m http.server 8000 --directory docs
 ```
 
 单文件版本已把 CSS 与 JS 全部内联，**断网也能用**。
